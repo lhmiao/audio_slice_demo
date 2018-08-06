@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>音频划分demo</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <ul class="menu">
+    <li class="menu-item menu-item-selected">Little Lady</li>
+    <li class="menu-item">Anchor Made Of Gold</li>
+    <li class="menu-item">Another Day</li>
+  </ul>
+  <p class="tip">tip: 双击歌曲名播放</p>
+  <div class="audio-container">
+    <div class="control-area">
+      <div class="control-btn">
+        <img class="control-btn-img" src="images/play.png" alt="">
+      </div>
+    </div>
+    <div class="progress-bar">
+      <!-- <div class="flag" value="23.54871s"></div> -->
+      <div class="progress-length">
+        <div class="vernier"></div>
+      </div>
+    </div>
+    <div class="audio-info">
+      <span class="audio-name" title="Little Lady">Little Lady</span>
+      <span>
+        <span class="position">00:00</span>
+        /
+        <span class="total">00:00</span>
+      </span>
+    </div>
+    <audio id="audioPlayer" src="audio/Little Lady.mp3">
+      您的浏览器不支持播放音频，请使用最新的Firefox或Chrome浏览器
+    </audio>
+  </div>
+  <div class="action-area">
+    <button id="putFlag">插入划分点</button>
+    <button id="reset">重置</button>
+    <button id="commit">确认提交</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
